@@ -31,7 +31,7 @@ tweet_to_remove_idx = 0
 edges = {} #dictionary of edge name (two sorted nodes) to its counter (to make sure when to remove)
 nodes = {} #dictionary of node name (hashtag) to its counter (to make sure when to remove)
 avg_degrees = []
-		
+
 for tweet_idx in range(len(tweets)):
 	tags, time = tweets[tweet_idx]
 	
@@ -40,7 +40,7 @@ for tweet_idx in range(len(tweets)):
 		old_tags, old_time = tweets[idx]
 		if (time - old_time).seconds > 60:
 			#decrease edge and node coutners related to old_tags
-			if len(tags) > 1:
+			if len(old_tags) > 1:
 				for pair in itertools.combinations(old_tags, 2):
 					for tag in pair:
 						#tag must exist
