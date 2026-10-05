@@ -1,6 +1,6 @@
 # Hashtag Graph
 
-My take on [the coding challenge for Insight Data Engineering 2015](https://github.com/InsightDataScience/coding-challenge), 
+My take on the coding challenge for Insight Data Engineering 2015, 
 cleaning tweets and creating a hashtag graph. I implemented in Python 3 just because I wanted to practice.
 Any novice mistakes were due to the short time frame, not my inexperience with the language :)
 
